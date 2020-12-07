@@ -130,8 +130,8 @@ img {
 
 /* Header Contacts */
 .contacts-item {
-  /* display: flex; */
-  /* align-items: center; */
+  display: flex;
+  align-items: center;
 }
 
 .contacts-item .contacts-icon {
@@ -152,7 +152,7 @@ img {
 }
 
 .page-header-contacts .header-contacts {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -228,12 +228,14 @@ img {
 }
 
 .features-item .thumb {
-  display: block;
+  display: flex;
   height: 120px;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
   border-radius: 4px;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-list .features-item:not(:last-child) {
@@ -321,6 +323,7 @@ img {
 }
 
 /* Clients */
+
 .clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -334,6 +337,27 @@ img {
   width: calc((100% - 150px) / 6);
 }
 
+.client {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client:hover,
+.client:focus {
+  border: 1px solid #2196f3;
+  --color3: #2196f3;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.client-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* Footer  */
 
 .footer {
@@ -442,6 +466,10 @@ img {
   border: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-elements:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-elements:nth-child(3n) {
