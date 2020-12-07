@@ -19,6 +19,8 @@
   --footer-contacts-color: rgb(255, 255, 255, 0.6);
 }
 
+/* Утилиты */
+
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -39,6 +41,23 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Header */
@@ -77,11 +96,6 @@ img {
 .footer-studio-logo {
   color: var(--footer-studio-footer-color);
 }
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 /* Site nav */
 
@@ -115,6 +129,18 @@ img {
 }
 
 /* Header Contacts */
+.contacts-item {
+  /* display: flex; */
+  /* align-items: center; */
+}
+
+.contacts-item .contacts-icon {
+  display: inline-flex;
+  margin: 0px 10px 0px 0px;
+  padding: 0;
+  fill: currentColor;
+  align-items: center;
+}
 
 .page-header-contacts {
   display: flex;
@@ -139,6 +165,7 @@ img {
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Hero  */
@@ -200,31 +227,13 @@ img {
   width: 270px;
 }
 
-.features-item::before {
+.features-item .thumb {
   display: block;
-  content: '';
   height: 120px;
-  background-size: 70px 70px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
   padding: 25px 100px;
-}
-.icon-attention::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-punctuality::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-planning::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-moderntech::before {
-  background-image: url(../images/astronaut.svg);
+  border-radius: 4px;
 }
 
 .features-list .features-item:not(:last-child) {
@@ -309,6 +318,20 @@ img {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
+}
+
+/* Clients */
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.client-item {
+  width: calc((100% - 150px) / 6);
 }
 
 /* Footer  */
