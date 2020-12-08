@@ -345,7 +345,8 @@ img {
   fill: currentColor;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   color: #fff;
   background-color: var(--accent-color);
   border-radius: 50%;
