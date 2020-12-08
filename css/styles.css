@@ -136,8 +136,7 @@ img {
 
 .contacts-item .contacts-icon {
   display: inline-flex;
-  margin: 0px 10px 0px 0px;
-  padding: 0;
+  margin-right: 10px;
   fill: currentColor;
   align-items: center;
 }
@@ -232,7 +231,6 @@ img {
   height: 120px;
   background-color: var(--secondary-background-color);
   margin-bottom: 30px;
-  /* padding: 25px 100px; */
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -328,22 +326,29 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 32px;
 }
 
-.social-item {
+.social-link {
+  display: flex;
   width: 44px;
   height: 44px;
   justify-content: center;
   align-items: center;
+  color: #afb1b8;
 }
 
-.link:not(:last-child) {
+.social-link:not(:last-child) {
   margin-right: 10px;
 }
 
 .link-logo {
-  fill: #afb1b8;
+  fill: currentColor;
+}
+
+.social-link:hover {
+  color: #fff;
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 
 /* Clients */
@@ -417,6 +422,44 @@ img {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.subscribe-container {
+  margin-left: 70px;
+}
+
+.subscribe-container p {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social .social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.subscribe-container .social-link {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.subscribe-container .social-link:hover,
+.subscribe-container .social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* Buttons */
