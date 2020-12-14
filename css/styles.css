@@ -135,10 +135,8 @@ img {
 }
 
 .contacts-item .contacts-icon {
-  display: inline-flex;
   margin-right: 10px;
   fill: currentColor;
-  align-items: center;
 }
 
 .page-header-contacts {
@@ -373,17 +371,23 @@ img {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: #afb1b8;
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 .client:hover,
 .client:focus {
   border: 1px solid #2196f3;
-  --color3: #2196f3;
+  color: #2196f3;
 }
 
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Footer  */
 
 .footer {
@@ -527,13 +531,17 @@ img {
 
 .portfolio-elements {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-elements:hover,
-.portfolio-elements:focus {
+.portfolio-link {
+  display: block;
+  border: 1px solid #eeeeee;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
