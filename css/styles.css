@@ -149,7 +149,8 @@ img {
 }
 
 .page-header-contacts .header-contacts {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
@@ -415,12 +416,14 @@ img {
   margin-bottom: 20px;
 }
 
-.footer .footer-address {
+.footer .exact-address {
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+  text-decoration: none;
 }
+
 .footer .footer-contact {
   color: var(--footer-contacts-color);
   text-decoration: none;
